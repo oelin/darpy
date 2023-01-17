@@ -3,7 +3,7 @@
 A bug-fixed, refactored and repackaged version of [alice-st/DARP](https://github.com/oldworship/DARP-python). This is a user-friendly implementation of the DARP algorithm for multi-agent coverage path planning (MCPP).
 
 ```sh
-pip install https://github.com/Oelin/darpy
+pip install git+https://github.com/Oelin/darpy
 ```
 
 
