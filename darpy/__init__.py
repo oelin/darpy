@@ -56,8 +56,12 @@ class DARPProblem:
                 visualization=False,
                 MaxIter=iterations,
         )
-
-        self.solved,_ = solver.divideRegions()
-        self.solution = solver.BinaryRobotRegions
-
-        return self.solved, self.solution
+        
+        try:
+            self.solved,_ = solver.divideRegions()
+            self.solution = solver.BinaryRobotRegions
+            
+            return self.solved, self.solution
+        
+        except:
+            return False, None
